@@ -11,6 +11,9 @@ footer {
     color: white;
 }
 
+title {
+    font-size: 40px;
+}
 h1,
 h2 {
     text-align: center;
@@ -39,4 +42,21 @@ p {
     margin: 40px auto;
     border: 5px solid gray;
     box-shadow: 5px 10px #888888;
+  }
+
+  .rainbow {
+    background: linear-gradient(to right, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #8B00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    animation: rainbow-flow 5s linear infinite;
+  }
+  
+  @keyframes rainbow-flow {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
   }
